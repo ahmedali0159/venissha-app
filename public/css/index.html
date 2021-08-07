@@ -11,15 +11,15 @@
 
 <body>
     <!-- Header -->
-    <nav class="bg-gray-100">
-        <div class="xl:max-w-6xl mx-auto">
+    <nav class='bg-gray-50'>
+        <div class="xl:max-w-6xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-4">
-                <!--logo-->
+                    <!--logo-->
                     <div>
                         <a href="#" class="flex items-center py-5 px-3 text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-pink-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 5l7 7-7 7M5 5l7 7-7 7" />
                             </svg>
@@ -27,25 +27,52 @@
                         </a>
                     </div>
                     <!--nav-->
-                    <div class="flex items-center space-x-1">
-                        <a href="#"class="py-4 px-3 text-gray-700 font-bold">portfolio</a>
-                        <a href="#"class="py-4 px-3 text-gray-700 font-bold">about me</a>
-                        <a href="#"class="py-4 px-3 text-gray-700 font-bold">my blog</a>
-                        <a href="#"class="py-4 px-3 text-gray-700 font-bold">reviews</a>
-                        <a href="#"class="py-4 px-3 text-gray-700 font-bold">contact me</a>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#"
+                            class="py-4 px-3 text-gray-700 font-bold border-b-2 border-pink-500 hover:text-pink-400">portfolio</a>
+                        <a href="#" class="py-4 px-3 text-gray-700 font-bold hover:text-pink-400">about</a>
+                        <a href="#" class="py-4 px-3 text-gray-700 font-bold hover:text-pink-400">blog</a>
+                        <a href="#" class="py-4 px-3 text-gray-700 font-bold hover:text-pink-400">reviews</a>
+                        <a href="#" class="py-4 px-3 text-gray-700 font-bold hover:text-pink-400">contact</a>
                     </div>
                 </div>
-                <div class="flex items-center">
+                <div class="hidden md:flex items-center">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
                     </a>
-                    <a class="text-pink-500 font-bold px-3" href="">Schedule a call</a>
+                    <a class="text-pink-500 font-bold px-3 py-5 hover:text-pink-400" href="">Schedule a Call</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
+        <div class="res-menu hidden md:hidden">
+            <a href="" class="block py-2 px-4 hover:text-pink-400 font-bold" text-sm>portfolio</a>
+            <a href="" class="block py-2 px-4 hover:text-pink-400 font-bold" text-sm>about</a>
+            <a href="" class="block py-2 px-4 hover:text-pink-400 font-bold" text-sm>blog</a>
+            <a href="" class="block py-2 px-4 hover:text-pink-400 font-bold" text-sm>reviews</a>
+            <a href="" class="block py-2 px-4 hover:text-pink-400 font-bold" text-sm>contact</a>
+        </div>
     </nav>
+    <script>
+        const btn = document.querySelector('button.menu-button');
+        const menu = document.querySelector('.res-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle("hidden")
+        })
+    </script>
 </body>
 
 </html>
