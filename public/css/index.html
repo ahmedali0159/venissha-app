@@ -14,22 +14,17 @@
         <!-- Top nav -->
         <nav>
             <div class="bg-gray-100">
-                <div class="xl:max-w-6xl mx-auto px-4">
+                <div class="xl:max-w-7xl mx-auto px-4">
                     <div class="flex justify-between">
                         <div class="flex space-x-4">
                             <!--logo-->
                             <div>
-                                <a href="#" class="flex items-center py-5 px-3 text-gray-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-pink-500"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                                    </svg>
-                                    <span class="font-bold">Venissa</span>
+                                <a href="#" class="flex items-center py-5 px-8 text-gray-700">
+                                    <span class="font-bold text-3xl">Ven<span class="text-pink-500">i</span>ssa</span>
                                 </a>
                             </div>
                             <!--nav-->
-                            <div class="hidden md:flex items-center space-x-1">
+                            <div class="hidden md:flex items-center px-4 space-x-1">
                                 <a href="#"
                                     class="py-4 px-3 text-gray-700 font-bold border-b-2 border-pink-500 hover:text-pink-400">portfolio</a>
                                 <a href="#" class="py-4 px-3 text-gray-700 font-bold hover:text-pink-400">about</a>
@@ -70,7 +65,7 @@
         </nav>
         <!--Side nav-->
         <div class="h-screen w-screen flex">
-            <aside class="hidden md:flex flex-col items-center bg-white text-gray-700 shadow h-full">
+            <aside class="hidden md:flex flex-col items-center h-full">
                 <div class="h-16 flex items-center w-full">
                     <a href="#" class="h-6 w-6 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none"
@@ -150,32 +145,31 @@
                 </ul>
             </aside>
             <!--Hero section-->
-            <div>
-                <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
-                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <p class="text-black font-bold">
-                            Hi There,
-                        </p>
-                        <h1 class="font-extrabold text-gray-800 sm:text-4xl">
+            <div class="m-auto max-w-6xl p-8">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 max-w-md flex flex-col justify-center">
+                        <div class="font-bold">Hi There</div>
+                        <div class="font-extrabold text-gray-800 sm:text-4xl">
                             <span class="text-7xl">I</span> <span class="text-6xl">am</span> <span
                                 class="text-7xl">V</span><span class="text-6xl">en</span><span
                                 class="text-pink-500 text-6xl">i</span><span class="text-6xl">ssa</span>
-                        </h1>
-                        <h5 class="font-bold text-4xl text-gray-800">I am designer during daytime</h5>
-                        <h5 class="font-bold text-2xl text-gray-800">&work with batman during nights</h5>
-                        <div class="flex justify-center">
-                            <button class="inline-flex text-white bg-pink-500 border-0 py-4 px-8 focus:outline-none hover:bg-pink-600 my-6 rounded text-lg">
-                                Ask Me How
-                            </button>
                         </div>
-                    </div>
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" src="/images/vennesha.png" alt="venissa">
-                    </div>
+                        <div class="font-bold text-4xl text-gray-800">I am designer during daytime</div>
+                        <div class="font-bold text-2xl text-gray-800">&work with batman during nights</div>
+                        <div class="my-5 h-16">
+                           <div class="shadow-md font-medium py-2 px-4 text-white
+                              cursor-pointer bg-pink-500 hover:bg-pink-600 rounded text-lg text-center w-48">Ask Me How</div>
+                        </div>
+                     </div>
+                   <div class="flex md:justify-end w-full md:w-1/2 -mt-5">
+                      <div class="bg-dots">
+                         <div class="shadow-2xl max-w-md z-10 rounded-full mt-6 ml-6">
+                            <img alt="card img" class="rounded-t" src="/images/vennesha.png"> 
+                         </div>
+                      </div>
+                   </div>
                 </div>
-            </div>
-            <!--Footer-->
-        </div>
+             </div>
     </section>
     <script>
         const btn = document.querySelector('button.menu-button');
